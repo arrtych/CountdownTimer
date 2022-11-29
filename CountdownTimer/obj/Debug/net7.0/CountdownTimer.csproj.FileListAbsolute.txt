@@ -54,7 +54,6 @@ D:\_dev\github\CountdownTimer\CountdownTimer\obj\Debug\net7.0\staticwebassets.pa
 D:\_dev\github\CountdownTimer\CountdownTimer\obj\Debug\net7.0\staticwebassets.build.json
 D:\_dev\github\CountdownTimer\CountdownTimer\obj\Debug\net7.0\staticwebassets.development.json
 D:\_dev\github\CountdownTimer\CountdownTimer\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-D:\_dev\github\CountdownTimer\CountdownTimer\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 D:\_dev\github\CountdownTimer\CountdownTimer\obj\Debug\net7.0\scopedcss\bundle\CountdownTimer.styles.css
 D:\_dev\github\CountdownTimer\CountdownTimer\obj\Debug\net7.0\scopedcss\projectbundle\CountdownTimer.bundle.scp.css
 D:\_dev\github\CountdownTimer\CountdownTimer\obj\Debug\net7.0\CountdownTimer.dll
