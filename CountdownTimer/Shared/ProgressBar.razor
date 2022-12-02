@@ -1,0 +1,30 @@
+﻿
+<div class="containerx">
+    <div class="circular-progress">
+        <span class="progress-value">@Progress</span>
+    </div>
+
+    <span class="text">@TimeType</span>
+
+
+</div>
+
+
+@code {
+    [Parameter]
+    public int Progress { get; set; }
+
+    [Parameter]
+    public ETimeType TimeType { get; set; }
+
+    //public DateTime seconds { get; set; }
+
+    public enum ETimeType
+    {
+        Seconds,
+        Minutes,
+        Hours,
+        Days,
+    }
+    
+}
