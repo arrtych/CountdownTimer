@@ -1,22 +1,29 @@
-@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+/*@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');*/
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 h1:focus {
     outline: none;
 }
 
-a, .btn-link {
+/*a, .btn-link {
     color: #0071c1;
-}
+}*/
 
-.btn-primary {
+/*.btn-primary {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
-}
+}*/
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
@@ -68,6 +75,50 @@ a, .btn-link {
     }
 
 
-/*.container {
-    margin: 0;
-}*/
+
+/*   Main Styles */
+
+
+.page {
+    height: 100%;
+}
+
+.bg {
+    height: 100vh;
+    background-image: url("../bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.notification-box {
+    background: #39a1ff;
+    border: 0px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+.column:first-child {
+    flex: 3;
+    border: 0.01px solid
+}
+
+.column:nth-child(2) {
+    flex: 5;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    background: #39a1ff;
+}
