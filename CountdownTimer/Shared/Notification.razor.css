@@ -1,0 +1,24 @@
+﻿.notification-box {
+    background: #39a1ff;
+    margin-top: 12.7em;
+    margin-left: 10em;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    color: #130035;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.content {
+    height: auto;
+    width: 371px;
+    /* margin: 0 auto; */
+    margin-top: 25px;
+    color: #fefefc;
+    font-size: 21px;
+}
