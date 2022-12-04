@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountdownTimer", "CountdownTimer\CountdownTimer.csproj", "{44093DB6-5315-49F0-8FD4-94F806D573AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountdownTimer.Server", "CountdownTimer\Server\CountdownTimer.Server.csproj", "{6163A55C-D0A3-4921-B428-636CC5F6D749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountdownTimer.Client", "CountdownTimer\Client\CountdownTimer.Client.csproj", "{A9CDDBCB-5F2C-41EC-86A5-FBCD190052FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountdownTimer.Shared", "CountdownTimer\Shared\CountdownTimer.Shared.csproj", "{5073FA1A-3EDE-4394-A265-30F66699A272}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{44093DB6-5315-49F0-8FD4-94F806D573AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44093DB6-5315-49F0-8FD4-94F806D573AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44093DB6-5315-49F0-8FD4-94F806D573AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44093DB6-5315-49F0-8FD4-94F806D573AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6163A55C-D0A3-4921-B428-636CC5F6D749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6163A55C-D0A3-4921-B428-636CC5F6D749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6163A55C-D0A3-4921-B428-636CC5F6D749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6163A55C-D0A3-4921-B428-636CC5F6D749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CDDBCB-5F2C-41EC-86A5-FBCD190052FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CDDBCB-5F2C-41EC-86A5-FBCD190052FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CDDBCB-5F2C-41EC-86A5-FBCD190052FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CDDBCB-5F2C-41EC-86A5-FBCD190052FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5073FA1A-3EDE-4394-A265-30F66699A272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5073FA1A-3EDE-4394-A265-30F66699A272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5073FA1A-3EDE-4394-A265-30F66699A272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5073FA1A-3EDE-4394-A265-30F66699A272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {66187F49-A96A-4BAB-80AA-F06BA4495D59}
+		SolutionGuid = {B46B59AD-9CCE-48BC-8F29-1E0078447C07}
 	EndGlobalSection
 EndGlobal
