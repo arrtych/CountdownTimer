@@ -2,46 +2,21 @@
 
 <div class="timer-section">
     <ProgressBar 
-        Progress=@h  
-        TimeType="ProgressBar.ETimeType.Hours" 
+        Progress=@hours  
+        TimeType="ProgressBar.ETimeType.Hours"
+        Style=@hoursStyle
     />
 
     <ProgressBar 
-        Progress=@m       
-        TimeType="ProgressBar.ETimeType.Minutes" 
+        Progress=@minutes       
+        TimeType="ProgressBar.ETimeType.Minutes"
+        Style=@minutesStyle 
     />
 
     <ProgressBar 
-        Progress=@s
-        TimeType="ProgressBar.ETimeType.Seconds" 
+        Progress=@seconds
+        TimeType="ProgressBar.ETimeType.Seconds"
+        Style=@secondsStyle 
     />
-
-
 
 </div>
-
-@code {
-    private Timer timer = new(1000);
-
-    private int d, h, m, s;
-    private DateTime comingSoon;
-
-    protected override async Task OnInitializedAsync()
-    {
-        comingSoon = new DateTime(2022, 12, 6);
-        timer.Elapsed += (sender, EventArgs) => CountDown();
-        timer.Start();
-        await base.OnInitializedAsync();
-    }
-
-    private void CountDown()
-    {
-        var distance = comingSoon - DateTime.Now;
-        h = distance.Hours;
-        m = distance.Minutes;
-        s = distance.Seconds;
-        d = distance.Days;
-        StateHasChanged();
-    }
-
-}

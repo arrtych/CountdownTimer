@@ -1,6 +1,6 @@
 ﻿
 <div class="progress-bar">
-    <div class="circular-progress">
+    <div class="circular-progress" style="@Style">
         <span class="progress-value">@Progress</span>
     </div>
 
@@ -10,6 +10,7 @@
 </div>
 
 
+
 @code {
     [Parameter]
     public int Progress { get; set; }
@@ -17,7 +18,8 @@
     [Parameter]
     public ETimeType TimeType { get; set; }
 
-    //public DateTime seconds { get; set; }
+    [Parameter]
+    public string? Style { get; set; }
 
     public enum ETimeType
     {
@@ -26,5 +28,5 @@
         Hours,
         Days,
     }
-    
+
 }
