@@ -1,6 +1,17 @@
-﻿@using System.Timers;
+﻿
 
 <div class="timer-section">
+
+    @if (days > 0)
+    {
+        <ProgressBar 
+            Progress=@days
+            TimeType="ProgressBar.ETimeType.Days"
+            Style=@daysStyle
+        />
+    }
+
+
     <ProgressBar 
         Progress=@hours  
         TimeType="ProgressBar.ETimeType.Hours"
@@ -18,5 +29,10 @@
         TimeType="ProgressBar.ETimeType.Seconds"
         Style=@secondsStyle 
     />
-
+  
 </div>
+@*
+<br />
+<br />
+<br />
+Timer Section: @test*@

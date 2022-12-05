@@ -94,12 +94,12 @@
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
-    background: #39a1ff;
+    background: #39a1ff; /*/color*/
 }
 
 .column:first-child {
     flex: 2;
-    border: 0.001px solid;
+    /*border: 0.001px solid;*/
     /* remove later*/
 }
 

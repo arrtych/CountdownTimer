@@ -14,10 +14,10 @@
     height: 130px;
     width: 130px;
     border-radius: 50%;
-    /*background: conic-gradient(#7d2ae8 180deg, #ededed 0deg);*/
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .circular-progress::before {
@@ -26,11 +26,12 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #39a1ff;
 }
 
 .progress-bar {
-    
+    margin: 0 auto;
+    text-align: center;
 }
 
 .progress-value {
@@ -44,4 +45,5 @@
     color: #140035;
     font-size: 15px;
     font-weight: bold;
+    margin-top: 25px;
 }

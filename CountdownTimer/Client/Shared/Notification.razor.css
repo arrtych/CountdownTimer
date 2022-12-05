@@ -1,7 +1,7 @@
 ﻿.notification-box {
     background: #39a1ff;
     margin-top: 12.7em;
-    margin-left: 10em;
+    text-align:center;
 }
 
 p {
@@ -12,12 +12,14 @@ p {
     color: #130035;
     font-size: 34px;
     font-weight: bold;
+    display: inline-block;
 }
 
 .content {
     height: auto;
-    width: 371px;
-    /* margin: 0 auto; */
+    width: 333px;
+    text-align: center;
+    margin: 0 auto;
     margin-top: 25px;
     color: #fefefc;
     font-size: 21px;
