@@ -10,7 +10,6 @@ namespace CountdownTimer.Client.Shared
 
         private DateTime comingSoon;
         private System.Timers.Timer timer = new(1000);
-        private String? test;
 
         [Parameter]
         public String? comingSoonStr { get; set; }
@@ -29,15 +28,7 @@ namespace CountdownTimer.Client.Shared
             /*
             * If comingSoonDate not set then default value is 24hours after now
             */
-            if (this.comingSoonStr!= null)
-            {
-                this.comingSoon = DateTime.Parse(comingSoonStr);
-                //this.test = "comingSoonStr not null. " + comingSoon;
-            } else
-            {
-                this.comingSoon = DateTime.Now.AddHours(24);
-                //this.test = "comingSoonStr is null. " + comingSoon;
-            }
+            this.comingSoon = this.comingSoonStr != null ? DateTime.Parse(comingSoonStr) : DateTime.Now.AddHours(24);
         }
 
 
@@ -48,7 +39,6 @@ namespace CountdownTimer.Client.Shared
             this.timer.Elapsed += (sender, EventArgs) => CountDown();
             this.timer.Start();
             await base.OnInitializedAsync();
-            //this.test = "Test: " + this.comingSoonStr;
         }
 
         private void CountDown()
@@ -85,9 +75,7 @@ namespace CountdownTimer.Client.Shared
 
             double daysValue = Math.Round(0.986 * this.days, 0);
             this.daysStyle = styleStartStr + daysValue + styleEndStr;
-            this.test = "test1: " + daysValue;
-
-            /**/
+        
 
 
 
